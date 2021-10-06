@@ -1,5 +1,5 @@
 <?php
-//Ejercicio 2 foreach2
+//Ejercicio 2 foreach2 PachecoSaul
 $color = array('blanco'=>'blanco.html', 'verde' => 'verde.html', 'rojo' => 'rojo.html');
 $lista2 = "";
 foreach ($color as $key => $value) {

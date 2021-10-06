@@ -1,5 +1,5 @@
 <?php
-//Ejercicio a arrays
+//Ejercicio a arrays PachecoSaul
 //1
 $nombres = ["Kravan", "Rin", "Ozymandias", "Volgar", "Lynx", "Saúl"];
 //2

@@ -1,5 +1,5 @@
 <?php
-//Ejercicio 8 partlist
+//Ejercicio 8 partlist PachecoSaul
 $array = ["Seguro", "que", "apruebo", "esta", "asignatura"];
 
 for ($i=1; $i < count($array); $i++) { 

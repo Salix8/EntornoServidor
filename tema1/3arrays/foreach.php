@@ -1,5 +1,5 @@
 <?php
-//Ejercicio 1 foreach
+//Ejercicio 1 foreach PachecoSaul
 $color = array('blanco', 'verde', 'rojo');
 $lista = "";
 

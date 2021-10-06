@@ -1,5 +1,5 @@
 <?php
-//Ejercicio 3 sort
+//Ejercicio 3 sort PachecoSaul
 $edades=array("Juan"=>"31","María"=>"41","Andrés"=>"39","Berta"=>"40");
 asort($edades);
 print_r($edades);

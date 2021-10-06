@@ -1,5 +1,5 @@
 <?php
-//Ejercicio 7 callback
+//Ejercicio 7 callback PachecoSaul
 $array=array("muy largo", "largo", "casi", "si");
 
 function calcLong ($valor){

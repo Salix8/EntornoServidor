@@ -1,18 +1,15 @@
 <?php
+    //Ejercicio 1 Cookies PachecoSaul
     $language = "";
-    
-    // $value = 'es-ES';
-    // setcookie("Idioma", $value);
 
-    $setLanguage = $_GET("setLanguage");
-    setcookie("Idioma", $setLanguage);
-
-    $sites = array(
-        "es" => "idioma.php?setLanguage=es",
-        "en" => "idioma.php?setLanguage=en",
-    );
-    header('Location: ' . $sites["es"]);
+    $language = $_GET["setLanguage"] ?? "";
     
+
+    if ($language == "") {
+        $language = $_COOKIE["language"] ?? "es";
+    }
+
+    setcookie("language", $language);
 
     echo "La cookie tiene el valor de " . ($_COOKIE["Idioma"] ?? "NULO");
     var_dump($_SERVER['HTTP_ACCEPT_LANGUAGE']);

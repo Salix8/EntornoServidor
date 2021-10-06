@@ -1,5 +1,5 @@
 <?php
-//Ejercicio 5 sort3
+//Ejercicio 5 sort3 PachecoSaul
 $array=array("nombre1"=>"muy largo", "nombre2"=>"largo", "nombre3"=>"casi", "nombre4"=>"si");
 
 function asort3($a, $b) {
