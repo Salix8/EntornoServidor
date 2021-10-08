@@ -2,22 +2,19 @@
     //Ejercicio 1 Idiomas PachecoSaul
     $language = "";
 
-    $language = $_GET["setLanguage"] ?? "";
+    $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) ?? "";
     
 
     if ($language == "") {
-        $language = $_COOKIE["language"] ?? "es";
+        $language = $_SERVER["HTTP_ACCEPT_LANGUAGE"] ?? "es";
     }
 
-    setcookie("language", $language);
-
-    echo "La cookie tiene el valor de " . ($_COOKIE["Idioma"] ?? "NULO");
-    var_dump($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    var_dump($lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2));
 
     if ($language == "en"){
         $content = "This page is in English";
         $title = "Change the language of the page";
-    }else{
+    }else {
         $content = "Esta página está en Castellano (Idioma por defecto)";
         $title = "Cambiar el idioma de la página";
     }
@@ -30,10 +27,9 @@
     <meta name="author" content="Saul Pacheco">
 </head>    
 <body>
-    <ul><?= $title ?>
-        <li><a href='idioma.php?setLanguage=es'>Español</a></li>
-        <li><a href='idioma.php?setLanguage=en'>Inglés</a></li>
-    </ul>
+    <br>
+    <?= $title ?>
+    <br>
     <?= $content ?>
 </body>
 </html>

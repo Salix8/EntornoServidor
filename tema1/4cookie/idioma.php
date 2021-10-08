@@ -1,7 +1,6 @@
 <?php
     //Ejercicio 1 Cookies PachecoSaul
-    $language = "";
-
+    
     $language = $_GET["setLanguage"] ?? "";
     
 
@@ -10,8 +9,6 @@
     }
 
     setcookie("language", $language);
-
-    echo "La cookie tiene el valor de " . ($_COOKIE["Idioma"] ?? "NULO");
     var_dump($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 
     if ($language == "en"){
