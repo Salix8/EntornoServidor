@@ -1,12 +1,7 @@
 <?php
     //Ejercicio 1 Cookies PachecoSaul
     
-    $language = $_GET["setLanguage"] ?? "";
-    
-
-    if ($language == "") {
-        $language = $_COOKIE["language"] ?? "es";
-    }
+    $language = $_GET["setLanguage"] ?? $_COOKIE["language"] ?? "es";
 
     setcookie("language", $language);
     var_dump($_SERVER['HTTP_ACCEPT_LANGUAGE']);
