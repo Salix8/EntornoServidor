@@ -1,5 +1,5 @@
 <?php
-    //Ejercicio 2 Navegador PachecoSaul
+    //Ejercicio 2 Cabeceras de solicitud Navegador PachecoSaul
 
     $navegador = $_SERVER['HTTP_USER_AGENT'] ?? "";
 

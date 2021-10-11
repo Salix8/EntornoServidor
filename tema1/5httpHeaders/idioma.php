@@ -1,5 +1,5 @@
 <?php
-    //Ejercicio 1 Idiomas PachecoSaul
+    //Ejercicio 1 Cabeceras de solicitud Idiomas PachecoSaul
     $language = "";
 
     $language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) ?? "";
