@@ -1,12 +1,15 @@
 <?php
     //Ejercicio 2 Cabeceras respuesta csv PachecoSaul
 
-    $f = fopen('productos.csv', 'w+');
-
     $productos = ["1" => "Producto 1", "2" => "Producto 2", "3" => "Producto 3"];
+    $resultado = "";
+    foreach ($productos as $key => $value) {
+        $resultado .= "$key, $value \n";
+    }
 
-    fputcsv($f, $productos);
+    echo $resultado;
 
-    header('Location: csv.php estatus = 1');
+    header("Content-Type: text/csv");
+    header("Content-Disposition: attachment; filename=productos.csv");
 
 ?>
